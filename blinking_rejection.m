@@ -3,7 +3,7 @@ function [ signal, spikes,spikes_index ] = blinking_rejection( signal,fs )
 if size(signal,1)>1; signal=signal';end
 
 % spike blinking rejection
-threshold=3;%3.5*(1/length(signal)*sum(abs(signal)));
+threshold=3*(1/length(signal)*sum(abs(signal)));
 coef=0.5;
 
 spikes=zeros(size(signal));
