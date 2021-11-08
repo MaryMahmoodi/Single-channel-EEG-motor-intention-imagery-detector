@@ -100,18 +100,6 @@ end
 
 fprintf ('eye blink removed...\n')
 
-% %%%%myogenic artifact rejection%%%%%%%
-% for i=1:2*fs:length(signal)-2*fs
-%     if i+2*fs-1<length(signal)-2*fs
-%
-%     if max(abs(signal(1,i:i+2*fs-1)))>=300%% median(Cz2(1,i:i+fs-1))>35
-%         signal(1,i:i+2*fs-1)=0;
-%
-%     end
-%
-%             end
-% end
-
 
 
 end
