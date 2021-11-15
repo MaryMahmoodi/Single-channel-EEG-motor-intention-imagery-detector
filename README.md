@@ -10,7 +10,7 @@ A new method for accurate detection of movement intention from single channel EE
 https://doi.org/10.1016/j.cmpbup.2021.100027
 
 
-Abstract
+
 Low frequency readiness potential (RP) is elicited in electroencephalograms (EEGs) as one intends to perform an imagery (IMI) or real movement (RMI). While in most brain-computer-interface (BCI) applications the challenge is to classify RPs of different limbs from the given EEG trials, the objective of this study is fast and automatic detection of RPs from the entire single channel EEG signal. 
 
 The proposed algorithm has two threshold blocks based on the nonlinear Teager-Kaiser energy operator (TEO) in the first block and the morphological properties of the RP waveform as constraints in the second block. The performance is strongly influenced by the abrupt energy changes due to transients and artefacts. As the major contribution, the proposed nonlinear convex optimization algorithm enables separation of transients from low frequency components by providing a fast thresholding mechanism. 
