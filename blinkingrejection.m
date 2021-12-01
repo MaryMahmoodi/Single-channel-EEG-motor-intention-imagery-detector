@@ -23,7 +23,6 @@ binary =abs(spikes)>0;
 % find consequtive detected SPIKE blinking samples
 E = binary(2:end)-binary(1:end-1);
 sise = size(binary);
-
 begins = find(E==1)+1;
 
 if binary(1) == 1
