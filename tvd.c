@@ -1,4 +1,3 @@
-
 /* output = tvd(input,width,lambda)
  * Total variation denoising (1-D signals)
  *
