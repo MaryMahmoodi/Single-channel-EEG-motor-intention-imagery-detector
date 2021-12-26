@@ -25,6 +25,4 @@ if j<length(sig)
         
     end
 end
-
-
 end
