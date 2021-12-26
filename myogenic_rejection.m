@@ -18,7 +18,6 @@ for j=1:step:length(sig)-step
 end
 
 
-
 if j<length(sig)
     if max(abs(sig(1,j:end)))>=thresh_EMG
         sig(1,round(j-0*fs):end)=randn(size( sig(1,round(j-0*fs):end)));
