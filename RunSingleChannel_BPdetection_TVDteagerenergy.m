@@ -8,7 +8,6 @@ subjectnumber=2;
 coefstd=0.2; %threshold of coefficient for standard deviation of TEO     % 0.1 0.15 0.25
 
 
-
 BCI_compet=0;% if using BCI_competitionIV datasets  BCI_compet=1
 physionet=0;%if using phyionet data physionet=1
 % else make them zero to consider our database of voluntary left hand movements (voluntary hand movement of pushbutton pressing)
