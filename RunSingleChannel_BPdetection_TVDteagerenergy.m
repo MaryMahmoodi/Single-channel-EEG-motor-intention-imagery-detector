@@ -36,6 +36,8 @@ usetemplatematching=0;
 landau=70;
 
 
+
+
 if BCI_compet==1
     
     fs=100;
