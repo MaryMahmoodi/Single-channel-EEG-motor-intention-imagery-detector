@@ -23,4 +23,4 @@ As a conclusion, the proposed method outperforms state-of-the-art techniques usi
 
 
 
-P.S. the main code is Run_singlechannel....m
+ Run the code named "RunSingleChannel_BPdetection_TVDteagerenergy.m"
