@@ -12,7 +12,6 @@ BCI_compet=0;% if using BCI_competitionIV datasets  BCI_compet=1
 physionet=0;%if using phyionet data physionet=1
 % else make them zero to consider our database of voluntary left hand movements (voluntary hand movement of pushbutton pressing)
 
-
 duration1=2*60; % (seconds) duration of signal for RP detection
 
 duration=0.253;% (s) lower bound of RP duration (0.3 s or 0.25) for morphological consideration
