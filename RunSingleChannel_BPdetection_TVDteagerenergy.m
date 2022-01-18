@@ -14,7 +14,7 @@ physionet=0;%if using phyionet data physionet=1
 
 duration1=2*60; % (seconds) duration of signal for RP detection
 
-duration=0.253;% (s) lower bound of RP duration (0.3 s or 0.25) for morphological consideration
+duration=0.25;% (s) lower bound of RP duration (0.3 s or 0.25) for morphological consideration
 
 th=5;% 5uv lowerband of slope
 thUP=45;% 45uv upper bound of slope
