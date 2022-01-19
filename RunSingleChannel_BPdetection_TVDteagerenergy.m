@@ -5,7 +5,7 @@
 clc
 clear
 subjectnumber=2;
-coefstd=0.0; %threshold of coefficient for standard deviation of TEO     % 0.1 0.15 0.25
+coefstd=0.05; %threshold of coefficient for standard deviation of TEO     % 0.1 0.15 0.25
 
 
 BCI_compet=0;% if using BCI_competitionIV datasets  BCI_compet=1
