@@ -36,7 +36,7 @@ landau=70;
 
 
 
-
+%input data
 if BCI_compet==1
     
     fs=100;
