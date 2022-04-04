@@ -1,9 +1,9 @@
 # Single-channel-EEG-motor-intention-imagery-detector
 
+
+# A new method for accurate detection of movement intention from single channel EEG for online BCI
 Computer Methods and Programs in Biomedicine Update
 Volume 1, 2021, 100027
-
-A new method for accurate detection of movement intention from single channel EEG for online BCI
 
 
 
@@ -19,7 +19,7 @@ The proposed algorithm has two threshold blocks based on the nonlinear Teager-Ka
 
 Application of the proposed method to Physionet RMI dataset, BCI competitionIV-1 IMI dataset and our own left hand movement datasets of healthy subjects led to true positive rates (TPRs) of 76.58%, 83.85%, and 81.15%, number of FPs/min of 2.41, 1.4, and 1.6 and accuracy rates of 85.43%, 90%, and 91%. Movement onset detection latency from our automatic RP detector was -384.5 ms.
 
-As a conclusion, the proposed method outperforms state-of-the-art techniques using as low as single channel EEG making it suitable for real-time neuro-rehabilitation of paralyzed subjects suffering from stroke.
+# As a conclusion, the proposed method outperforms state-of-the-art techniques using as low as single channel EEG making it suitable for real-time neuro-rehabilitation of paralyzed subjects suffering from stroke.
 
 
 
