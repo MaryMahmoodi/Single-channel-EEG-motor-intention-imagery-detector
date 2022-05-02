@@ -1,17 +1,17 @@
 function [ Score ] = F1score( bD, vd1, vd2 )
 %[ Score ] = F1score (( bD, vd1, vd2 )
-% Computes the F1 score by sample of a sleep spindle detection algorithm
+% Computes the F1 score by sample of a detection algorithm
 % Input : 
-%           bD:         Binary vectors containing 1's where a spindle
-%                       is recorded and 0's where no spindle is detected           
-%           vd1,2:      Binary vector depicting the spindles marked
+%           bD:         Binary vectors containing 1's where an event
+%                       is recorded and 0's where no event is detected           
+%           vd1,2:      Binary vector depicting the event marked
 %                       by visual expert 1,2 respectively
 % Output :  
 %           Score:      2x1 score cell structure. Each cell is a type of
-%                       statistic for sleep spindle detection. Score.label describes
+%                       statistic for event detection. Score.label describes
 %                       the type of statistic
 %
-% Note: All definitions of tp,fp,tn,f1, are from - Sleep-spindle detection: 
+% Note: All definitions of tp,fp,tn,f1, are from - event detection: 
 % crowdsourcing and evaluating performance of experts, non-experts and automated methods
 % Warby S.C, et al 2014.
 % Ankit Parekh
