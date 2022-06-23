@@ -1,6 +1,8 @@
 %% RP detection accroding to the following paper:
+
 % Mahmoodi, M.; Makkiabadi, B.; Mahmoudi, M.; Sanei, S.
 % A New Method for Accurate Detection of Movement Intention from Single Channel EEG for Online BCI.
+
 
 %% 1- input and initial parameters
 clc
