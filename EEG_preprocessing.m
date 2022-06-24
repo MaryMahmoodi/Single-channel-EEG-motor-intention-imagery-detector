@@ -1,7 +1,9 @@
 function [Cz1,x_d, x_dLP, timescale,spikes,spikes_index ]=EEG_preprocessing (Cz,freqrange,fs, step_EMG,threshold_EMG,step_EMG2,threshold_EMG2, useDWT, BCI_compet,physionet)
+
 %%% Bandpass filter design %%%
+
 if BCI_compet || physionet
-% the Parks-McClellan method is used via the ‘remez’ function of MATLAB
+% the Parks-McClellan method is used via the â€˜remezâ€™ function of MATLAB
 rp = 0.01; % Passband ripple
 rs = 26; % Stopband ripple
 f = freqrange; % Cutoff frequencies
@@ -20,12 +22,16 @@ Hd1=design(d1,'equiripple');
 Cz1=filter(Hd1, Cz);
 end
 
+
 timescale=(1:length(Cz1))./fs;
 
 %%% myogenic rejection
+
 Cz1=myogenic_rejection(Cz1, fs,step_EMG ,threshold_EMG);
 
+
 %%%  blinking (EOG) artefact rejection%%%
+
 threshold=3*(1/length(Cz1)*sum(abs(Cz1))) ;% 3*
 
 figure(4) ;clf;subplot(3,1,1); plot(timescale, Cz1,'b');
@@ -65,7 +71,9 @@ else
 end
 
 x_d = Cz1;
+
 %%%low pass filter%%%
+
 [a2,b2]=butter(4,5.5/(fs/2),'low');%5/(fs/2)
 x_dLP=filter(a2,b2,Cz1);%%% out or Cz1
 
