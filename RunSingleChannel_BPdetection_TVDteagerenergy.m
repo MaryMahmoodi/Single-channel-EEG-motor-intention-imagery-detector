@@ -38,7 +38,7 @@ landau=70;
 
 
 
-% load input data
+%% load input data
 
 if BCI_compet==1
     
