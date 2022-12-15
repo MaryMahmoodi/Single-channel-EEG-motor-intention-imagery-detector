@@ -25,7 +25,7 @@ end
 
 timescale=(1:length(Cz1))./fs;
 
-%%% myogenic rejection
+%%% myogenic rejection %%%
 
 Cz1=myogenic_rejection(Cz1, fs,step_EMG ,threshold_EMG);
 
@@ -72,7 +72,7 @@ end
 
 x_d = Cz1;
 
-%%%low pass filter%%%
+%%% low pass filter %%%
 
 [a2,b2]=butter(4,5.5/(fs/2),'low');%5/(fs/2)
 x_dLP=filter(a2,b2,Cz1);%%% out or Cz1
