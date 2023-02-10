@@ -3,6 +3,8 @@
 % Mahmoodi, M.; Makkiabadi, B.; Mahmoudi, M.; Sanei, S.
 % A New Method for Accurate Detection of Movement Intention from Single Channel EEG for Online BCI.
 
+
+
 %% 1- input and initial parameters
 clc
 clear
@@ -38,6 +40,7 @@ landau=70;
 
 
 
+
 %% load input data
 
 if BCI_compet==1
@@ -69,10 +72,12 @@ end
 
 
 
+
 %% 2- Preprocessing (baseline correction, total variation denoising (TVD), BP filter, myogenic rejection, EOG rejection)
 if ~ exist('tvd.mexw64')
     mex tvd.c
 end
+
 
 
 if BCI_compet==1
@@ -90,6 +95,8 @@ else
     
    
 end
+
+
 
 % BP filter and artefact rejection
 [Cz1,x_d, x_dLP, timescale,spikes,spikes_index ]=EEG_preprocessing (Cz,freqrange,fs, step_EMG,threshold_EMG,step_EMG2,threshold_EMG2,useDWT,BCI_compet,physionet);
