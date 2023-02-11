@@ -20,6 +20,8 @@ end
 
 org_spikes=spikes;
 binary =abs(spikes)>0;
+
+
 % find consequtive detected SPIKE blinking samples
 E = binary(2:end)-binary(1:end-1);
 sise = size(binary);
@@ -49,6 +51,9 @@ if binary(end) == 1
 elseif numel(ends) == 0 && binary(end) == 0
     ends = NaN;
 end
+
+
+
 
 counter=1; spikes_index=[];
 if ~isnan(begins)
