@@ -25,6 +25,7 @@ end
 
 timescale=(1:length(Cz1))./fs;
 
+
 %%% myogenic rejection %%%
 
 Cz1=myogenic_rejection(Cz1, fs,step_EMG ,threshold_EMG);
