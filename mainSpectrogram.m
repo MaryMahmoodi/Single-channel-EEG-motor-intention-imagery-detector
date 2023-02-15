@@ -71,6 +71,7 @@ end
 rate = round(Fs/(MaxFreq/1));
 y1 = decimate(y1,rate) ;
  
+
 %% Spectrogram Calculation and Display
  %figure 
  %subplot(2,1,1)
@@ -95,6 +96,7 @@ y1 = decimate(y1,rate) ;
  P(i,:)=P(i,:).*sqrt(i);
  end
 P=20*log10((P)+1e-6);
+
 
 if show 
 imagesc( T, F,P ); colormap(jet); colorbar off;
