@@ -1,5 +1,6 @@
 function [Cz1,x_d, x_dLP, timescale,spikes,spikes_index ]=EEG_preprocessing (Cz,freqrange,fs, step_EMG,threshold_EMG,step_EMG2,threshold_EMG2, useDWT, BCI_compet,physionet)
 
+
 %%% Bandpass filter design %%%
 
 if BCI_compet || physionet
@@ -26,9 +27,11 @@ end
 timescale=(1:length(Cz1))./fs;
 
 
+
 %%% myogenic rejection %%%
 
 Cz1=myogenic_rejection(Cz1, fs,step_EMG ,threshold_EMG);
+
 
 
 %%%  blinking (EOG) artefact rejection%%%
@@ -61,6 +64,7 @@ ylabel ('Amplitude (\muV)')
 
 legend ('x_d: x_T_V_D after blinking artefact rejection')
 
+
 if useDWT
     % wavelet decomposition with the wavelet with most similarity to signal(sym5)
     [C,L] = wavedec(Cz1,3,'sym5');%3 sym5
@@ -72,6 +76,8 @@ else
 end
 
 x_d = Cz1;
+
+
 
 %%% low pass filter %%%
 
