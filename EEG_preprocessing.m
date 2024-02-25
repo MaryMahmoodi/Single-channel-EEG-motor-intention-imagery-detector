@@ -23,10 +23,7 @@ Hd1=design(d1,'equiripple');
 Cz1=filter(Hd1, Cz);
 end
 
-
 timescale=(1:length(Cz1))./fs;
-
-
 
 %%% myogenic rejection %%%
 
