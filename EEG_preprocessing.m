@@ -74,8 +74,6 @@ end
 
 x_d = Cz1;
 
-
-
 %%% low pass filter %%%
 
 [a2,b2]=butter(4,5.5/(fs/2),'low');%5/(fs/2)
