@@ -11,7 +11,6 @@ function [ Score ] = F1score( bD, vd1, vd2 )
 %                       statistic for event detection. Score.label describes
 %                       the type of statistic
 %
-% Note: All definitions of tp,fp,tn,f1, are from - event detection: 
 
 
 Score = cell(2,1);
