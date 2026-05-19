@@ -12,11 +12,7 @@ function [ Score ] = F1score( bD, vd1, vd2 )
 %                       the type of statistic
 %
 % Note: All definitions of tp,fp,tn,f1, are from - event detection: 
-% crowdsourcing and evaluating performance of experts, non-experts and automated methods
-% Warby S.C, et al 2014.
-% Ankit Parekh
-% NYU-Poly
-% 06/20/14
+
 
 Score = cell(2,1);
 Score{1} = {'True Positive','True Negative', 'False Positive', 'False Negative', ...
